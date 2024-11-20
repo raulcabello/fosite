@@ -1,4 +1,4 @@
-module github.com/ory/fosite
+module github.com/raulcabello/fosite
 
 require (
 	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2
@@ -26,6 +26,13 @@ require (
 	golang.org/x/net v0.25.0
 	golang.org/x/oauth2 v0.14.0
 	golang.org/x/text v0.16.0
+)
+
+replace (
+	go.opentelemetry.io/otel => go.opentelemetry.io/otel v1.21.0
+	go.opentelemetry.io/otel/metric => go.opentelemetry.io/otel/metric v1.21.0
+	go.opentelemetry.io/otel/sdk => go.opentelemetry.io/otel/sdk v1.21.0
+	go.opentelemetry.io/otel/trace => go.opentelemetry.io/otel/trace v1.21.0
 )
 
 require (
